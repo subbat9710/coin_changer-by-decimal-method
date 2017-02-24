@@ -1,6 +1,10 @@
 def make_change(amount)
 	change = {}
 
+    if amount > 0.24 and amount <= 0.25
+    	change[:quarter] = 1
+    	amount -= 0.25
+    end
     if amount > 0.19 and amount <= 0.24
     	change[:dime] = 2
     	amount -= 0.20
