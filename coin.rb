@@ -1,7 +1,7 @@
 def make_change(amount)
 	change = {}
 
-    if amount > 0.99 and amount <= 1
+    if amount > 0.99 and amount <= 1.09
     	change[:dollar] = 1
     	amount -= 1
     end

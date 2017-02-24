@@ -45,4 +45,7 @@ class TestCoin < Minitest::Test
     def test_1_bill_return_1_dollar_hash
     	assert_equal({:dollar => 1}, make_change(1))
     end
+    def test_102_return_1_dollar_2_pennies_hash
+    	assert_equal({:dollar => 1, :nickel => 1, :penny => 2}, make_change(1.07))
+    end
 end
