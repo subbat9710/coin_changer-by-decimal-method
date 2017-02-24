@@ -1,16 +1,12 @@
 def make_change(amount)
 	change = {}
-	if amount >= 0.10
-		change[:dime] = 0.10
-		amount -= 0.10
-	end
-	if amount >= 0.05 
-		change[:nickel] = 0.05  
-	    amount -= 0.05       
-	end
-	if  amount >= 0.01    
-        change[:penny] = amount 
-   end
-		change  
+
+	if amount > 0.04 and amount <= 0.09
+		change[:nickel] = 1 
+	    amount -= 0.05
+	end      
+	if amount > 0 and amount <= 0.04   
+        change[:penny] = (amount * 100).round
+    end
+		change 
 end
-	
