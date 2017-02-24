@@ -21,4 +21,7 @@ class TestCoin < Minitest::Test
     def test_9_cents_return_1_nickel_4_pennies_hash
     	assert_equal({:nickel => 1, :penny => 4}, make_change(0.09))
     end
+    def test_10_cents_return_1_dime_hash
+    	assert_equal({:dime => 1}, make_change(0.10))
+    end
 end
