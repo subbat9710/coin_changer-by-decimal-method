@@ -1,7 +1,11 @@
 def make_change(amount)
 	change = {}
 
-    if amount > 0.24 and amount <= 0.49
+    if amount > 0.69 and amount <= 0.99
+    	change[:quarter] = 3
+    	amount -= 0.75
+    end
+    if amount > 0.24 and amount <= 0.69
     	change[:quarter] = 1
     	amount -= 0.25
     end
