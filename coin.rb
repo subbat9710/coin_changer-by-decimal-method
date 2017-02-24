@@ -1,7 +1,7 @@
 def make_change(amount)
 	change = {}
 
-    if amount > 0.19 and amount <= 0.20
+    if amount > 0.19 and amount <= 0.24
     	change[:dime] = 2
     	amount -= 0.20
     end
