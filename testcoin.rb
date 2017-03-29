@@ -42,10 +42,16 @@ class TestCoin < Minitest::Test
     def test_92_cents_return_3_quarter_1dime_1_nickel_3_pennies_hash
     	assert_equal({:quarter => 3, :dime => 1, :nickel => 1, :penny => 3}, make_change(0.93))
     end
-    def test_1_bill_return_1_dollar_hash
-    	assert_equal({:dollar => 1}, make_change(1))
-    end
-    def test_102_return_1_dollar_2_pennies_hash
-    	assert_equal({:dollar => 1, :nickel => 1, :penny => 2}, make_change(1.07))
-    end
+#    def test_1_bill_return_1_dollar_hash
+#    	assert_equal({:dollar => 1}, make_change(1))
+#    end
+#    def test_102_return_1_dollar_2_pennies_hash
+#    	assert_equal({:dollar => 1, :nickel => 1, :penny => 2}, make_change(1.07))
+#    end
+#    def test_41_return_hash
+#    	assert_equal({:quarter => 1, :dime => 1, :nickel => 1, :penny => 1}, make_change(0.41))
+#    end
+#    def test_2_return_2_dollars_hash
+#    	assert_equal({:dollar => 2}, make_change(2))
+#    end
 end
